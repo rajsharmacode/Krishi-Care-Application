@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddressPage"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="horizontal"
+            android:background="#5C00FF">
+
+            <ImageButton
+                android:id="@+id/addbackbtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="#5C00FF"
+                android:src="@drawable/white_back_arro"
+                tools:ignore="SpeakableTextPresentCheck" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Addresses"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/addfulname"
+            android:layout_marginTop="20dp"
+            android:layout_width="390dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:background="@drawable/custom_edittext"
+            android:hint="Full Name"
+            android:paddingLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/addphonenum"
+            android:layout_marginTop="20dp"
+            android:layout_width="390dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:background="@drawable/custom_edittext"
+            android:hint="Phone Number"
+            android:paddingLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/addpincode"
+            android:layout_marginTop="20dp"
+            android:layout_width="390dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:background="@drawable/custom_edittext"
+            android:hint="Pincode"
+            android:paddingLeft="10dp"/>
+
+        <FrameLayout
+            android:layout_width="390dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="16dp"
+            android:background="@drawable/custom_edittext">
+
+            <!--<EditText
+                android:layout_width="390dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_edittext"
+                android:hint="State"
+                android:inputType="none"
+                android:paddingLeft="10dp"/> -->
+
+
+            <Spinner
+                android:id="@+id/addstate"
+                android:layout_width="390dp"
+                android:layout_height="55dp"
+                android:textSize="16dp"
+                android:paddingLeft="10dp"/>
+
+        </FrameLayout>
+
+
+
+        <EditText
+            android:id="@+id/addcity"
+            android:layout_marginTop="20dp"
+            android:layout_width="390dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:background="@drawable/custom_edittext"
+            android:hint="City"
+            android:paddingLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/addplotno"
+            android:layout_marginTop="20dp"
+            android:layout_width="390dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:background="@drawable/custom_edittext"
+            android:hint="House No. Or Building Name"
+            android:paddingLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/addaddress"
+            android:layout_marginTop="20dp"
+            android:layout_width="390dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:background="@drawable/custom_edittext"
+            android:hint="Road Name, Area, Colony"
+            android:paddingLeft="10dp"/>
+
+        <!--<EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="390dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_edittext"
+            android:hint="Add Nearby Famous Shop/Mall/Landmark"
+            android:textSize="16dp"
+            android:paddingLeft="10dp"/>-->
+
+        <Button
+            android:id="@+id/addsavebtn"
+            android:layout_width="390dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center"
+            android:text="Save Address"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+</ScrollView>

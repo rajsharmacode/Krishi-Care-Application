@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group
+        android:id="@+id/gp2">
+
+
+        <item
+            android:id="@+id/myorder"
+            android:icon="@drawable/baseline_shop_24"
+            android:title="My Order"/>
+
+
+
+    </group>
+    <group
+        android:id="@+id/gp1">
+
+
+        <item
+            android:id="@+id/contactus"
+            android:icon="@drawable/baseline_call_24"
+            android:title="Contact Us"/>
+
+        <item
+            android:id="@+id/aboutus"
+            android:icon="@drawable/baseline_groups_24"
+            android:title="About Us"/>
+
+
+
+
+    </group>
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/baseline_logout_24"
+        android:title="Log Out"/>
+
+</menu>

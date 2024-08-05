@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/hlkabackblue"
+    android:orientation="vertical"
+    tools:context=".FrontMainPages.HomeFragment">
+
+<!--    6FA6FB-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="145dp"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent">-->
+
+<!--        &lt;!&ndash;        <AdapterViewFlipper&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:id="@+id/adapter_view_flipper"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_width="380dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_height="145dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_gravity="center"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:background="@drawable/custom_edit"/>&ndash;&gt;-->
+
+<!--    </LinearLayout>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="17dp"
+                android:layout_gravity="center"
+                android:layout_height="180dp">
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/imageSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:iss_auto_cycle="true"
+                    app:iss_period="1000"
+                    app:iss_delay="0"
+
+                     />
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_fertilizer"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="#CCE7F4"
+                    app:cardCornerRadius="10dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="30dp"
+                            android:layout_height="70dp"
+                            android:layout_marginEnd="32dp"
+                            android:src="@drawable/baseline_arrow_forward"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="28dp"
+                            android:background="@drawable/custom_circle"
+                            android:src="@drawable/fertilizer"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fertilizer_calculator"
+                            android:textColor="@color/black"
+                            android:textSize="28dp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.561"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.482" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:id="@+id/card_pests"-->
+<!--                    android:layout_width="170dp"-->
+<!--                    android:layout_height="100dp"-->
+<!--                    android:layout_marginStart="15dp"-->
+<!--                    app:cardBackgroundColor="#CCE7F4"-->
+<!--                    app:cardCornerRadius="10dp">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="35dp"-->
+<!--                        android:layout_height="35dp"-->
+<!--                        android:layout_marginStart="10dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:background="@drawable/custom_circle"-->
+<!--                        android:src="@drawable/baseline_back" />-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="20dp"-->
+<!--                        android:layout_height="20dp"-->
+<!--                        android:layout_marginStart="140dp"-->
+<!--                        android:layout_marginTop="20dp"-->
+<!--                        android:src="@drawable/baseline_arrow_forward" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_marginTop="55dp"-->
+<!--                        android:text="@string/pests_diseases"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                </androidx.cardview.widget.CardView>-->
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:id="@+id/cartJiwadudesease"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="100dp"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:layout_marginLeft="10dp"                    app:cardBackgroundColor="#CCE7F4"-->
+<!--                    app:cardCornerRadius="10dp">-->
+
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="56dp"-->
+<!--                        android:layout_height="56dp"-->
+<!--                        android:layout_marginStart="260dp"-->
+<!--                        android:layout_marginTop="20dp"-->
+<!--                        android:src="@drawable/baseline_arrow_forward" />-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="35dp"-->
+<!--                        android:layout_height="35dp"-->
+<!--                        android:layout_marginStart="30dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:background="@drawable/custom_circle"-->
+<!--                        android:src="@drawable/fertilizer" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="30dp"-->
+<!--                        android:layout_marginTop="55dp"-->
+<!--                        android:text="@string/fertilizer_calculator"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                </androidx.cardview.widget.CardView>-->
+
+            </LinearLayout>
+<!--            <LinearLayout-->
+<!--                android:id="@+id/linearLayout6"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginRight="15dp"-->
+<!--                android:layout_marginLeft="18dp"-->
+<!--                android:orientation="horizontal">-->
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="20dp"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cartcultivationtips"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        app:cardBackgroundColor="#CCE7F4"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_circle"
+            android:src="@drawable/irrigation" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/baseline_arrow_forward" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="55dp"
+            android:text="Cultivation Tips"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cartleavdesease"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+
+        app:cardBackgroundColor="#CCE7F4"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_circle"
+            android:src="@drawable/alert" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/baseline_arrow_forward" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="55dp"
+            android:text="@string/pests_and_disease_alert"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--            </LinearLayout>-->
+
+            <!--<LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_cultivation"
+                    android:layout_width="170dp"
+                    android:layout_height="100dp"
+                    app:cardBackgroundColor="#CCE7F4"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/custom_circle"
+                        android:src="@drawable/irrigation" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="140dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/baseline_arrow_forward" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="55dp"
+                        android:text="Cultivation Tips"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_alert"
+                    android:layout_width="170dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="15dp"
+                    app:cardBackgroundColor="#CCE7F4"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/custom_circle"
+                        android:src="@drawable/alert" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="140dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/baseline_arrow_forward" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="55dp"
+                        android:text="@string/pests_and_disease_alert"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="20dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="210dp">
+                <ImageView
+                    android:id="@+id/take_a_picture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="220dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/take_photo" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Recommended Product"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mainrecview"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:nestedScrollingEnabled="false"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

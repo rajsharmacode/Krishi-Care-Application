@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="skyblue">#36DACC</color>
+    <color name="gray">#656565</color>
+    <color name="blue">#5C00FF</color>
+    <color name="maintoolbaar">#0027FF</color>
+    <color name="hlkabackblue">#78AAF8</color>
+    <color name="hlkawhite">#E6DBFA</color>
+</resources>

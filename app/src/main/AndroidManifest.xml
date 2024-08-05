@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Project"
+        tools:targetApi="31">
+        <activity
+            android:name=".Splashscreen"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateCommPost"
+            android:exported="false" />
+        <activity
+            android:name=".ContactUs"
+            android:exported="false" />
+        <activity
+            android:name=".AboutUsPage"
+            android:exported="false" />
+        <activity
+            android:name=".CaltivationFullPage"
+            android:exported="false" />
+        <activity
+            android:name=".MyorderFullPage"
+            android:exported="false" />
+        <activity
+            android:name=".MyorderPage"
+            android:exported="false" />
+        <activity
+            android:name=".JivaduDeseasePage"
+            android:exported="false" />
+        <activity
+            android:name=".LeaveDeseaePage"
+            android:exported="false" />
+        <activity
+            android:name=".CultivationPage"
+            android:exported="false" />
+        <activity
+            android:name=".ReadPracticesFullPage"
+            android:exported="false" />
+        <activity
+            android:name=".CameraScanDesease"
+            android:exported="false" />
+        <activity
+            android:name=".CalculatorPage"
+            android:exported="false" />
+        <activity
+            android:name=".NotifyPage"
+            android:exported="false" />
+        <activity
+            android:name=".SerachItemPage"
+            android:exported="true" />
+        <activity
+            android:name=".AddtoCartPage"
+            android:exported="false" />
+        <activity
+            android:name=".CaseonDelevery"
+            android:exported="false" />
+        <activity
+            android:name=".AddressPage"
+            android:exported="false" />
+        <activity
+            android:name=".InvoiceItemPage"
+            android:exported="true" />
+        <activity
+            android:name=".FullItemdetailPage"
+            android:exported="false" />
+        <activity
+            android:name=".CommentAskcommunity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginRegister.OtpPage22"
+            android:exported="false" />
+        <activity
+            android:name=".LoginRegister.LoginPage22"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PestandDesease"
+            android:exported="false" />
+        <activity
+            android:name=".ShopItem"
+            android:exported="true" />
+        <activity
+            android:name=".LoginRegister.OtpPage"
+            android:exported="true" />
+        <activity
+            android:name=".LoginRegister.LoginPage"
+            android:exported="true" />
+        <activity
+            android:name=".AskCommunityPage"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilePage"
+            android:exported="true"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+        </activity> <!-- razorpay -->
+        <activity
+            android:name="com.razorpay.CheckoutActivity"
+            android:theme="@style/CheckoutTheme" />
+
+        <receiver
+            android:name="com.razorpay.RzpTokenReceiver"
+            android:exported="true"
+            android:permission="com.razorpay.permission.C2D_MESSAGE">
+            <intent-filter>
+                <action android:name="com.razorpay.TOKEN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

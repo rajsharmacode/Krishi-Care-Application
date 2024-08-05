@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/upsearch"
+        android:icon="@drawable/baseline_search_24"
+        android:title="search"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/upnotify"
+        android:icon="@drawable/baseline_notifications_24"
+        android:title="notify"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/upcart"
+        android:icon="@drawable/baseline_shopping_cart_24"
+        android:title="add to cart"
+        app:showAsAction="ifRoom"/>
+</menu>

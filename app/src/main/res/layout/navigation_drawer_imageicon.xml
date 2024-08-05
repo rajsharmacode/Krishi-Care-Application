@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:padding="30dp"
+    android:background="#409C37"
+    android:layout_width="match_parent"
+    android:layout_height="180dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/gray"
+        android:backgroundTint="#D1D1D1">
+
+        <ImageView
+            android:id="@+id/personimg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/round_person_24"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User name"
+        android:id="@+id/usernametxt"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="User name"-->
+<!--        android:textColor="#323232"-->
+<!--        android:textSize="15sp"/>-->
+
+
+</LinearLayout>
